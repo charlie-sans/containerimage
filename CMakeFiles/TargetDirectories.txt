@@ -1,0 +1,3 @@
+/home/charlie/containerimage/CMakeFiles/login_app.dir
+/home/charlie/containerimage/CMakeFiles/edit_cache.dir
+/home/charlie/containerimage/CMakeFiles/rebuild_cache.dir
