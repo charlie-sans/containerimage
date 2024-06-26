@@ -1,1 +1,1 @@
-/usr/bin/cc -rdynamic CMakeFiles/login_app.dir/main.c.o -o login_app  -lcurses -lform /usr/lib/libsqlite3.so
+/usr/bin/cc -rdynamic CMakeFiles/login_app.dir/main.c.o -o login_app  -lcurses -lform /usr/lib/x86_64-linux-gnu/libsqlite3.so 

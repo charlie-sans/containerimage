@@ -1,0 +1,52 @@
+# Ignore build folders
+build/
+Release/
+Debug/
+
+# Ignore CMake cache and temporary files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Ignore generated files
+*.sln
+*.sublime-workspace
+
+# Ignore specific file types that may be generated
+*.o
+*.a
+*.so
+*.dylib
+*.lib
+*.d
+*.exe
+*.out
+*.app
+
+# Ignore editor and IDE specific files
+.vscode/
+*.code-workspace
+*.user
+*.userprefs
+*.suo
+*.swp
+*.DS_Store
+*.sln.docstates
+*.suo
+*.userprefs
+*.pidb
+*.pdb
+
+# Ignore generated files 
+*.dll
+*.exe
+*.ilk
+*.ncb
+*.obj
+*.pch
+*.pdb
+*.res
+out/
+.vscode/
+.vs/

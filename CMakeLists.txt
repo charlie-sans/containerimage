@@ -9,7 +9,7 @@ include_directories(${CURSES_INCLUDE_DIRS})
 find_package(SQLite3 REQUIRED)
 
 # Add executable
-add_executable(login_app main.c)
+add_executable(main main.c)
 
 # Link Ncurses and SQLite3 libraries
-target_link_libraries(login_app ${CURSES_LIBRARIES} SQLite::SQLite3)
+target_link_libraries(main ${CURSES_LIBRARIES} SQLite::SQLite3)
