@@ -1,3 +1,0 @@
-/mnt/c/Users/GAMER/Source/Repos/containerimage/CMakeFiles/main.dir
-/mnt/c/Users/GAMER/Source/Repos/containerimage/CMakeFiles/edit_cache.dir
-/mnt/c/Users/GAMER/Source/Repos/containerimage/CMakeFiles/rebuild_cache.dir

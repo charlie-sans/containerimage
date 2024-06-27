@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sqlite3.h>
-
+#include "handle.c"
 // ncurses login prompt
 void window()
 {
@@ -132,7 +132,16 @@ int main() {
     getstr(username);
     mvprintw(yMax / 2 + 1, xMax / 2, "Password: ");
     getstr(usrpass);
-
+    if (username == NULL || usrpass == NULL) {
+		mvprintw(yMax / 2 + 2, xMax / 2, "Login failed!");
+		refresh();
+		sleep(2);
+		endwin();
+		return 0;
+	}
+    else
+    {
+        print_centered_color(WHITE, "Login successful!");
     // check if the username and password are correct
     while (sqlite3_step(stmt) == SQLITE_ROW) {
 		if (strcmp(username, (char *) sqlite3_column_text(stmt, 1)) == 0) {
@@ -148,6 +157,7 @@ int main() {
 		mvprintw(yMax / 2 + 2, xMax / 2, "Login failed!");
         
 	}
+    }
 
 
     sqlite3_finalize(stmt);
